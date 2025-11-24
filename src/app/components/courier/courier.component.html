@@ -16,11 +16,11 @@
   </div>
 
   <div class="order-list-container" *ngIf="!loading && orders.length > 0">
-    
+
     <div class="order-group pickup-orders">
-      
+
       <h3 *ngIf="ordersToPickUp.length > 0">🚨 Para Pegar e Sair ({{ ordersToPickUp.length }})</h3>
-      
+
       <div *ngIf="ordersToPickUp.length === 0" class="group-empty-message">
         <p>Nenhum pedido pronto para retirada.</p>
       </div>
@@ -30,32 +30,30 @@
           <span class="order-id">#{{ order.id }}</span>
           <span class="order-status status-READY_FOR_DELIVERY">Pronto para Retirar</span>
         </div>
-        
+
         <div class="card-details">
           <p class="detail-item total-amount">
             <span class="label">Total:</span>
             {{ order.total | currency:'BRL':'symbol':'1.2-2' }}
           </p>
           <p class="detail-item">
-            <span class="label">Pronto em:</span> 
+            <span class="label">Pronto em:</span>
             {{ order.createdAt | date:'shortTime' }}
           </p>
         </div>
 
         <div class="card-actions">
-          <button
-            (click)="updateStatus(order, 'EN_ROUTE')"
-            class="action-button route-button">
+          <button (click)="updateStatus(order, 'EN_ROUTE')" class="action-button route-button">
             Pegar e Sair (A caminho)
           </button>
         </div>
       </div>
     </div>
-    
+
     <div class="order-group en-route-orders">
-      
+
       <h3 *ngIf="ordersEnRoute.length > 0">🛵 A Caminho ({{ ordersEnRoute.length }})</h3>
-      
+
       <div *ngIf="ordersEnRoute.length === 0" class="group-empty-message">
         <p>Nenhum pedido em rota de entrega.</p>
       </div>
@@ -65,22 +63,20 @@
           <span class="order-id">#{{ order.id }}</span>
           <span class="order-status status-EN_ROUTE">Em Rota</span>
         </div>
-        
+
         <div class="card-details">
           <p class="detail-item total-amount">
             <span class="label">Total:</span>
             {{ order.total | currency:'BRL':'symbol':'1.2-2' }}
           </p>
           <p class="detail-item">
-            <span class="label">Iniciado às:</span> 
+            <span class="label">Iniciado às:</span>
             {{ order.createdAt | date:'shortTime' }}
           </p>
         </div>
 
         <div class="card-actions">
-          <button
-            (click)="updateStatus(order, 'DELIVERED')"
-            class="action-button delivered-button">
+          <button (click)="updateStatus(order, 'DELIVERED')" class="action-button delivered-button">
             Confirmar Entrega
           </button>
         </div>
@@ -88,4 +84,4 @@
     </div>
   </div>
 
-  </div>
+</div>

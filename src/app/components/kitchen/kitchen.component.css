@@ -1,7 +1,3 @@
-/* ========================================================= */
-/* 🔪 Estilos do Componente Cozinha (kitchen.component.css)  */
-/* ========================================================= */
-
 :host {
   font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: block;
@@ -14,7 +10,7 @@
 /* --- Títulos e Botão Atualizar --- */
 
 h2 {
-  color: #d4d4d4; /* Cor de Destaque */
+  color: #d4d4d4;
   border-bottom: 3px solid #333;
   padding-bottom: 12px;
   margin-bottom: 25px;
@@ -29,7 +25,7 @@ h3 {
   font-weight: 700;
   margin: 35px 0 15px 0;
   padding-left: 10px;
-  border-left: 4px solid #c6ad84; /* Destaque da lista */
+  border-left: 4px solid #c6ad84;
 }
 
 /* Botão Atualizar */
@@ -80,7 +76,6 @@ button:not(.action-button):hover {
   display: block;
 }
 
-/* Mensagens de lista vazia (dentro dos grupos) */
 .group-empty-message p {
   text-align: center;
   font-style: italic;
@@ -90,16 +85,12 @@ button:not(.action-button):hover {
   border-radius: 8px;
 }
 
-/* --- Layout das Listas (Duas Colunas) --- */
-
 .order-list-container {
   display: grid;
   gap: 30px;
-  /* Divide em duas colunas em telas maiores */
   grid-template-columns: 1fr 1fr;
 }
 
-/* Garante que em telas menores as listas fiquem empilhadas */
 @media (max-width: 900px) {
   .order-list-container {
     grid-template-columns: 1fr;
@@ -164,7 +155,7 @@ button:not(.action-button):hover {
 .total-amount {
   font-weight: 700;
   font-size: 1.1em;
-  color: #9ccc65; /* Verde Suave para o Total */
+  color: #9ccc65;
 }
 
 /* Lista de Itens */
@@ -201,22 +192,22 @@ button:not(.action-button):hover {
 /* --- Cores de Status --- */
 
 .status-CREATED {
-  background-color: #03a9f4; /* Azul Claro - Novo Pedido */
+  background-color: #03a9f4;
 }
 
 .status-PREPARING {
-  background-color: #ffb74d; /* Laranja Suave - Preparando */
+  background-color: #ffb74d;
 }
 
 .status-READY_FOR_DELIVERY {
-  background-color: #66bb6a; /* Verde Suave - Pronto */
+  background-color: #66bb6a;
 }
 
 /* --- Botões de Ação --- */
 
 .card-actions {
   display: flex;
-  justify-content: center; /* CENTRALIZA O BOTÃO */
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -233,9 +224,8 @@ button:not(.action-button):hover {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Botão: Iniciar Preparo (CREATED -> PREPARING) */
 .prepare-button {
-  background-color: #ffb74d; /* Laranja Suave */
+  background-color: #ffb74d;
   color: #121212;
 }
 
@@ -244,9 +234,8 @@ button:not(.action-button):hover {
   transform: translateY(-2px);
 }
 
-/* Botão: Pronto para Entrega (PREPARING -> READY_FOR_DELIVERY) */
 .ready-button {
-  background-color: #66bb6a; /* Verde Suave */
+  background-color: #66bb6a;
   color: #121212;
 }
 

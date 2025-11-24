@@ -121,9 +121,8 @@ h2 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Botão Adicionar ao Carrinho */
 .cart-button {
-  background-color: #03a9f4; /* Azul Claro */
+  background-color: #03a9f4;
   color: #121212;
   font-weight: 700;
   font-size: 1.1em;
@@ -134,7 +133,6 @@ h2 {
   transform: translateY(-1px);
 }
 
-/* Ações de Gerenciamento (Edit/Delete) */
 .management-actions {
   display: flex;
   gap: 10px;
@@ -142,7 +140,7 @@ h2 {
 
 .edit-button {
   flex-grow: 1;
-  background-color: #ffc107; /* Amarelo (Edição) */
+  background-color: #ffc107;
   color: #121212;
 }
 
@@ -152,15 +150,13 @@ h2 {
 
 .delete-button {
   flex-grow: 1;
-  background-color: #f44336; /* Vermelho (Excluir) */
+  background-color: #f44336;
   color: #ffffff;
 }
 
 .delete-button:hover {
   background-color: #e57373;
 }
-
-/* --- Ação Principal (Adicionar Novo Prato) --- */
 
 .header-actions {
   text-align: center;
@@ -180,27 +176,19 @@ h2 {
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
-/* ========================================================= */
-/* 🔔 Estilos da Toast Notification */
-/* ========================================================= */
 
 .toast-notification {
-  /* Posicionamento Fixo no Topo */
   position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 1000; /* Garante que fique acima de tudo */
-
-  /* Estilo do Fundo e Texto */
-  background-color: #66bb6a; /* Verde suave (sucesso) */
+  z-index: 1000;
+  background-color: #66bb6a;
   color: #121212;
   padding: 15px 25px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   font-weight: 600;
   font-size: 1.1em;
-
-  /* Animação de entrada sutil (opcional) */
   animation: fadein 0.5s;
 }
 
@@ -219,7 +207,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 15px; /* Adiciona um pequeno respiro antes dos botões */
+  margin-bottom: 15px;
 }
 
 .quantity-control label {
@@ -228,20 +216,15 @@ h2 {
 }
 
 .quantity-input {
-  /* --- Borda e Fundo (Remove o visual padrão) --- */
-  background-color: transparent; /* Fundo transparente (assimila-se ao card) */
-  border: none; /* Remove a borda (a "barra branca") */
-
-  /* --- Cor e Estilo do Texto --- */
-  color: #9ccc65; /* Usa a cor verde do preço para destaque sutil */
+  background-color: transparent;
+  border: none;
+  color: #9ccc65;
   font-size: 1.1em;
   font-weight: 600;
-  width: 50px; /* Tamanho fixo para ser discreto */
+  width: 50px;
   text-align: center;
-
-  /* --- Remoção de Decorações do Navegador --- */
   padding: 5px;
-  outline: none; /* Remove a borda ao clicar (foco) */
+  outline: none;
 }
 .quantity-input::-webkit-outer-spin-button,
 .quantity-input::-webkit-inner-spin-button {

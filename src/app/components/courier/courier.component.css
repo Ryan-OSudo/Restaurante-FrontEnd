@@ -1,7 +1,3 @@
-/* ========================================================= */
-/* 🛵 Estilos do Componente Motoboy (courier.component.css)  */
-/* ========================================================= */
-
 :host {
   font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: block;
@@ -10,8 +6,6 @@
   color: #e0e0e0;
   padding: 30px;
 }
-
-/* --- Títulos e Botão Atualizar --- */
 
 h2 {
   color: #ffffff;
@@ -32,7 +26,6 @@ h3 {
   border-left: 4px solid #c6ad84;
 }
 
-/* Botão Atualizar */
 button:not(.action-button) {
   display: block;
   margin: 0 auto 30px auto;
@@ -55,9 +48,6 @@ button:not(.action-button):hover {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
 }
 
-/* --- Mensagens --- */
-
-/* Mensagem principal quando não há pedidos */
 .empty-message p {
   text-align: center;
   padding: 50px 20px;
@@ -69,7 +59,6 @@ button:not(.action-button):hover {
   margin-top: 50px;
 }
 
-/* Mensagens de erro */
 .error-message p {
   color: #ff5252 !important;
   background-color: #331111;
@@ -80,7 +69,6 @@ button:not(.action-button):hover {
   display: block;
 }
 
-/* Mensagens de lista vazia (dentro dos grupos) */
 .group-empty-message p {
   text-align: center;
   font-style: italic;
@@ -89,8 +77,6 @@ button:not(.action-button):hover {
   background-color: #0f1c22;
   border-radius: 8px;
 }
-
-/* --- Layout das Listas (Duas Colunas) --- */
 
 .order-list-container {
   display: grid;
@@ -103,8 +89,6 @@ button:not(.action-button):hover {
     grid-template-columns: 1fr;
   }
 }
-
-/* --- Cards de Pedidos --- */
 
 .order-card {
   background-color: #0f1c22;
@@ -120,7 +104,6 @@ button:not(.action-button):hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
 
-/* Header do Card */
 .card-header {
   display: flex;
   justify-content: space-between;
@@ -136,7 +119,6 @@ button:not(.action-button):hover {
   color: #c6ad84;
 }
 
-/* Status */
 .order-status {
   font-size: 1em;
   font-weight: 700;
@@ -145,7 +127,6 @@ button:not(.action-button):hover {
   color: #121212;
 }
 
-/* Detalhes do Card */
 .card-details {
   display: flex;
   justify-content: space-between;
@@ -165,17 +146,13 @@ button:not(.action-button):hover {
   color: #9ccc65;
 }
 
-/* --- Cores de Status --- */
-
 .status-READY_FOR_DELIVERY {
-  background-color: #03a9f4; /* Azul Claro - Pronto p/ Pegar */
+  background-color: #03a9f4;
 }
 
 .status-EN_ROUTE {
-  background-color: #ffc107; /* Amarelo - A Caminho */
+  background-color: #ffc107;
 }
-
-/* --- Botões de Ação --- */
 
 .card-actions {
   display: flex;
@@ -196,9 +173,8 @@ button:not(.action-button):hover {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Botão: Pegar e sair (READY_FOR_DELIVERY -> EN_ROUTE) */
 .route-button {
-  background-color: #ffc107; /* Amarelo */
+  background-color: #ffc107;
   color: #121212;
 }
 
@@ -207,7 +183,6 @@ button:not(.action-button):hover {
   transform: translateY(-2px);
 }
 
-/* Botão: Confirmar Entrega (EN_ROUTE -> DELIVERED) */
 .delivered-button {
   background-color: #4caf50; /* Verde */
   color: #121212;
@@ -217,8 +192,6 @@ button:not(.action-button):hover {
   background-color: #66bb6a;
   transform: translateY(-2px);
 }
-
-/* --- Estilos da Lista Horizontal (Rodapé - Opcional) --- */
 
 .quick-view-footer {
   position: fixed;

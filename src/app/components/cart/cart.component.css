@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
 
-/* --- Estilos Gerais da Tela --- */
 .cart-screen {
   background-color: #091011;
   color: #ffffff;
@@ -10,7 +9,6 @@
   flex-direction: column;
 }
 
-/* --- Header / Topo --- */
 .header {
   display: flex;
   align-items: center;
@@ -34,11 +32,9 @@
   text-transform: uppercase;
 }
 
-/* --- Conteúdo Principal (Scrollável) --- */
 .cart-content {
   flex-grow: 1;
   padding: 20px 20px 0 20px;
-  /* 💡 CORREÇÃO: Espaço para o Rodapé (apenas 80px) */
   padding-bottom: 80px;
 }
 
@@ -48,34 +44,26 @@
   gap: 10px;
 }
 
-/* --- Item do Carrinho --- */
 .cart-item {
   background-color: #0f1c22;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 18px 16px;
-
-  /* Arredondamento solicitado */
   border-radius: 15px;
-
   margin-bottom: 10px;
   cursor: pointer;
-
-  /* Transições para Hover/Zoom e Brilho */
   transition: transform 0.3s ease-out, box-shadow 0.3s ease-out,
     background-color 0.3s ease-out;
   box-shadow: none;
 }
 
-/* Efeito de Hover/Zoom na barra inteira */
 .cart-item:hover {
   transform: scale(1.01);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
   background-color: #152933;
 }
 
-/* CLASSE ATIVADA PELO HOVER DA LIXEIRA (usando [ngClass]) */
 .item-hover-active {
   background-color: rgba(255, 0, 0, 0.15) !important;
   transform: scale(1.01);
@@ -90,39 +78,28 @@
   border-radius: 15px;
 }
 
-/* --- Ícone da Lixeira (Linha e Brilho Focado) --- */
 .trash-icon {
   font-size: 20px;
   color: #ff4d4d;
   cursor: pointer;
   margin-left: 15px;
   padding: 0;
-
-  /* Configuração inicial da linha e brilho (INVISÍVEIS) */
   border-bottom: 2px solid transparent;
   box-shadow: 0 0 0 transparent;
   display: inline-block;
-
-  /* Transição para a linha e brilho */
   transition: border-bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
     color 0.3s ease-in-out;
 }
 
 .trash-icon:hover {
-  /* 1. Ativa a linha vermelha sólida */
   border-bottom: 2px solid #ff1a1a;
-
-  /* 2. Adiciona o EFEITO DE LUZ (brilho) SÓ embaixo */
   box-shadow: 0 3px 5px 0 rgba(255, 0, 0, 0.6);
-
-  /* Faz o ícone brilhar */
   color: #fff;
 }
 
-/* --- Rodapé FIXO (Total e Finalizar) --- */
 .footer-container {
   position: fixed;
-  bottom: 0; /* 💡 CORREÇÃO: Colado no fundo */
+  bottom: 0;
   left: 0;
   right: 0;
   background-color: #0f1c22;
@@ -132,9 +109,6 @@
   align-items: center;
   box-shadow: 0 -2px 10px #070d0f;
   z-index: 10;
-
-  /* 💡 CORREÇÃO: Removemos o deslocamento, agora ele fica no bottom: 0 */
-  /* transform: translateY(-60px); */
 }
 
 .total-text {
@@ -158,4 +132,3 @@
 h2 {
   font-family: "arial";
 }
-/* 💡 ESTILOS REMOVIDOS: A antiga navbar-bottom e seus estilos foram removidos. */

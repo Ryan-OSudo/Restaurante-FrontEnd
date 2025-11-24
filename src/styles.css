@@ -35,17 +35,15 @@ a:hover {
   color: white;
 }
 
-/* Opcional: Define um estilo de foco acessível para todos os elementos interativos
-   (para quando não for definido um estilo de foco específico no componente) */
 a:focus,
 button:focus {
   outline: none;
   color: white;
 }
 .main-nav a.active:not(.admin-link) {
-  color: white; /* GARANTIDO: Força a letra a ser branca */
+  color: white;
 }
-/* Estilos de cabeçalhos globais, caso não sejam sobreescritos */
+
 h1,
 h2,
 h3,
@@ -58,18 +56,12 @@ h6 {
   font-weight: 600;
 }
 
-/* ========================================================= */
-/* 3. ESTILOS DE ELEMENTOS GERAIS                            */
-/* ========================================================= */
-
-/* Estilo para listas sem marcadores (usado na sua tabela) */
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* Remove a linha sutil em volta das imagens (se houver) */
 img {
   border: none;
   max-width: 100%;

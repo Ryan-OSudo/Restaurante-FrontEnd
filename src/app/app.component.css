@@ -2,21 +2,17 @@
 
 html,
 body {
-  /* Corrigindo margem, pois 20 é muito */
   margin: 0;
   padding: 0;
   width: 100%;
   min-height: 100%;
 }
-
 body {
-  /* COR DE FUNDO PRINCIPAL DO TEMA: Preto Carvão/Azul Petróleo */
   background-color: #1a2226;
-  color: #e0e0e0; /* Texto principal em cinza claro */
-  font-family: "Roboto", Arial, sans-serif; /* Usando uma das fontes importadas */
+  color: #e0e0e0;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
-/* O componente principal, onde a router-outlet renderiza. */
 :host {
   display: flex;
   flex-direction: column;
@@ -24,39 +20,31 @@ body {
   background-color: #1a2226;
 }
 
-/* Garante que o conteúdo principal ocupe o espaço restante */
 main {
   flex-grow: 1;
   padding: 16px;
 }
 
-/* ========================================================= */
-/* 2. Estilos da Barra de Navegação (.main-nav)              */
-/* ========================================================= */
 .main-nav {
-  background-color: #101518; /* Um tom ligeiramente mais escuro que o corpo */
+  background-color: #101518;
   padding: 15px 20px;
   border-bottom: 1px solid #333;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   display: flex;
-  /* AQUI: Remove o 'gap: 20px' geral para os links de admin */
   gap: 20px;
   align-items: center;
 }
 
-/* Título/Branding - Casa de Vó */
 .brand-title {
-  color: #f8d300; /* Laranja/Dourado de destaque (do site) */
-  font-size: 180%; /* Aumentei um pouco para destaque */
+  color: #f8d300;
+  font-size: 180%;
   font-weight: 500;
   margin-right: 10px;
-  /* Fonte Cursiva Delicada */
   font-family: "Arizonia", cursive;
 }
 
-/* Estilo para todos os links */
 .main-nav a {
-  color: #b0b0b0; /* Cinza suave para os links normais */
+  color: #b0b0b0;
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 4px;
@@ -66,63 +54,47 @@ main {
   align-items: center;
 }
 
-/* Efeito Hover nos links */
 .main-nav a:hover {
-  color: white; /* Texto branco */
+  color: white;
 }
 
-/* Estilo para o link ativo (rota atual) */
 .main-nav a.active {
-  color: #1a2226; /* Texto escuro para contraste */
+  color: #1a2226;
   font-weight: 600;
   box-shadow: 0 0 5px rgba(235, 143, 64, 0.5);
 }
 
-/* Estilo especial para links de administração (Cozinha e Motoboy) */
 .main-nav a:nth-child(5) {
-  /* CORREÇÃO APLICADA: Move o 5º item (Cozinha) e ele puxa o 6º item (Motoboy) junto. */
   margin-left: auto;
 }
 
 .admin-link {
-  color: #ffc107; /* Amarelo/Laranja para áreas administrativas */
-  /* Remove o padding lateral para o ícone */
+  color: #ffc107;
   padding: 8px 10px;
 }
 
-/* NOVO: Estilo para o ícone de Chef (SVG) */
-/* ========================================================= */
-/* 2. Estilos da Barra de Navegação (.main-nav)              */
-/* ========================================================= */
-
-/* ... código anterior ... */
-
-/* NOVO: Estilo para o ícone de Chef (SVG) - SELETORES SEPARADOS */
 .chef-icon,
 .moto-icon {
   position: absolute;
   display: fixed;
-
   line-height: 0;
   background: 2px;
 }
 
-/* 🎯 AUMENTANDO O TAMANHO DO ÍCONE DO CHEF */
 .chef-icon svg {
   width: 40px !important;
   height: 40px !important;
 }
 
-/* 🎯 DIMINUINDO O TAMANHO DO ÍCONE DO MOTOBOY */
 .moto-icon svg {
-  width: 40px !important; /* Mudei de 40px para 24px */
-  height: 40px !important; /* Mudei de 40px para 24px */
+  width: 40px !important;
+  height: 40px !important;
 }
 .chef-icon svg {
   width: 50px !important;
   height: 40px !important;
 }
 .chef-icon:houver svg {
-  width: 80px !important; /* O ícone NÃO vai crescer para 80px */
+  width: 80px !important;
   height: 80px !important;
 }

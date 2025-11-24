@@ -1,23 +1,16 @@
-/* ========================================================= */
-/* 📝 Estilos do Formulário de Pratos (dish-form.component.css) */
-/* ========================================================= */
-
 :host {
-  /* Garante que o componente ocupe a largura total */
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center;
   padding: 40px;
   min-height: 100vh;
-  background-color: #121212; /* Fundo Escuro Principal */
-  color: #e0e0e0; /* Cor do Texto Claro */
+  background-color: #091011;
+  color: #e0e0e0;
   font-family: "Roboto", sans-serif;
 }
 
-/* --- Título do Formulário --- */
-
 h2 {
-  color: #c6ad84; /* Cor de Destaque */
+  color: #c6ad84;
   font-size: 2.2em;
   font-weight: 700;
   margin-bottom: 30px;
@@ -25,21 +18,17 @@ h2 {
   padding-bottom: 10px;
 }
 
-/* --- Estilo do Formulário (Container) --- */
-
 form {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 100%;
-  max-width: 450px; /* Largura máxima para centralizar o foco */
+  max-width: 450px;
   padding: 30px;
-  background-color: #1e1e1e; /* Fundo do Card/Formulário */
+  background-color: #0f1c22;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
-
-/* --- Labels --- */
 
 label {
   font-weight: 500;
@@ -48,15 +37,13 @@ label {
   margin-bottom: 5px;
 }
 
-/* --- Inputs (Campos de Entrada) --- */
-
 input[type="text"],
 input[type="number"] {
   width: 100%;
   padding: 12px 15px;
-  border: 1px solid #333; /* Borda sutil */
+  border: 1px solid #333;
   border-radius: 6px;
-  background-color: #2d2d2d; /* Fundo do Input um pouco mais claro */
+  background-color: #363636;
   color: #e0e0e0;
   font-size: 1em;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -65,20 +52,17 @@ input[type="number"] {
 
 input[type="text"]:focus,
 input[type="number"]:focus {
-  border-color: #c6ad84; /* Cor de foco */
+  border-color: #c6ad84;
   background-color: #3c3c3c;
   outline: none;
   box-shadow: 0 0 0 3px rgba(198, 173, 132, 0.3);
 }
 
-/* Esconde as setas de incremento/decremento em inputs number */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-/* --- Botão de Submissão --- */
 
 button[type="submit"] {
   margin-top: 15px;
@@ -92,7 +76,6 @@ button[type="submit"] {
   transition: background-color 0.3s ease, transform 0.1s ease,
     box-shadow 0.3s ease;
 
-  /* Cor para Ação Principal (Verde para Salvar/Adicionar) */
   background-color: #4caf50;
   color: #121212;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
