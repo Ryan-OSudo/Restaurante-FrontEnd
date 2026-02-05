@@ -1,72 +1,65 @@
-# 🍔 Frontend Restaurante Angular (Comanda Digital)
+# 🍔 Delivery System Interface: Frontend Angular
 
-Este repositório contém a aplicação web frontend desenvolvida em **Angular v18.1.3** para o projeto **Comanda Digital Completo**. O objetivo é oferecer uma interface moderna e responsiva para o sistema de pedidos e gerenciamento de um restaurante.
+![Angular](https://img.shields.io/badge/Angular-18.1.3-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-LTS-339933?style=for-the-badge&logo=node.js&logoColor=white)
 
-## 🔗 Repositórios Relacionados
-
-Para que este projeto funcione corretamente, é necessário rodar a API de backend correspondente.
-
-| Projeto | Tecnologia | Link do Repositório |
-| :--- | :--- | :--- |
-| **Frontend (Atual)** | Angular 18 | `https://github.com/Ryan-OSudo/frontendRestauranteAngular` |
-| **Backend (API)** | [Detalhes da tecnologia] | `https://github.com/RodrigoSMatos/Comanda-Digital-Completo` |
+Esta é a interface web do **Sistema de Delivery UNASP**, desenvolvida em **Angular 18**. O projeto foca em uma experiência de usuário (**UX**) fluida e responsiva para o gerenciamento de pedidos.
 
 ---
 
-## 🛠️ Pré-requisitos
+## 🔗 Ecossistema do Projeto
 
-Certifique-se de ter as seguintes ferramentas instaladas:
+Para que a experiência seja completa, este frontend deve estar conectado à API de backend.
 
-* **Node.js** (versão LTS recomendada)
-* **npm** (instalado junto com o Node.js)
-* **Angular CLI** (pode ser instalado via `npm install -g @angular/cli`)
-* **Git**
-
----
-
-## 🚀 Como Rodar o Projeto
-
-Siga os passos abaixo para colocar o frontend e o backend em funcionamento.
-
-### Passo 1: Configurar e Iniciar o Backend
-
-1.  Clone o repositório do backend:
-    ```bash
-    git clone [https://github.com/RodrigoSMatos/Comanda-Digital-Completo](https://github.com/RodrigoSMatos/Comanda-Digital-Completo)
-    ```
-2.  Acesse o diretório e siga as instruções contidas no `README` do backend para instalar dependências e iniciar a API.
-    * **⚠️ Crucial:** Certifique-se de que a API esteja rodando e acessível (ex: em `http://localhost:8080`).
-
-### Passo 2: Configurar e Iniciar o Frontend (Este Projeto)
-
-1.  Clone este repositório (se ainda não o fez):
-    ```bash
-    git clone [https://github.com/Ryan-OSudo/frontendRestauranteAngular](https://github.com/Ryan-OSudo/frontendRestauranteAngular)
-    ```
-2.  Acesse o diretório do projeto:
-    ```bash
-    cd frontendRestauranteAngular
-    ```
-3.  Instale as dependências do projeto Angular:
-    ```bash
-    npm install
-    ```
-4.  Inicie o servidor de desenvolvimento:
-    ```bash
-    ng serve
-    ```
-    *O servidor de desenvolvimento será iniciado. Navegue para `http://localhost:4200/`.*
+| Camada | Tecnologia | Repositório |
+| :--- | :---: | :--- |
+| **Frontend (Atual)** | Angular 18 | [Acessar Repo](https://github.com/Ryan-OSudo/frontendRestauranteAngular) |
+| **Backend (API)** | Spring Boot | [Acessar Repo](https://github.com/RodrigoSMatos/Comanda-Digital-Completo) |
 
 ---
 
-## 🧑‍💻 Guia de Contribuição (Git Workflow)
+## 🎯 Funcionalidades da Interface
 
-Para colaborar no projeto, siga o fluxo de trabalho padrão do Git:
+O sistema é dividido em visões estratégicas:
 
-### 1. Configuração de Identidade
+* **🛒 Menu & Carrinho:** Navegação, seleção de itens e cálculo de totais.
+* **👨‍🍳 Painel da Cozinha:** Visualização de pedidos em tempo real para produção.
+* **🚚 Gestão de Delivery:** Acompanhamento de entregas.
+* **📜 Histórico:** Consulta de todos os pedidos concluídos.
 
-Configure seu nome e e-mail (necessário apenas uma vez por máquina):
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* **Angular 18:** Arquitetura baseada em componentes e *Signals*.
+* **TypeScript:** Desenvolvimento com tipagem estática e segura.
+* **RxJS:** Tratamento de fluxos de dados e requisições HTTP.
+* **Angular CLI:** Ferramenta de build e automação de desenvolvimento.
+
+---
+
+## 🚀 Como Iniciar a Aplicação
+
+### 1. Pré-requisitos
+Certifique-se de ter instalado:
+* **Node.js** (LTS)
+* **Angular CLI** (`npm install -g @angular/cli`)
+
+### 2. Instalação
+
+> [!WARNING]
+> **Atenção:** Certifique-se de que a API Backend esteja rodando em `http://localhost:8080` antes de iniciar.
 
 ```bash
-git config --global user.name "Seu Nome Completo"
-git config --global user.email "seu.email@exemplo.com"
+# Clone o repositório
+git clone [https://github.com/Ryan-OSudo/frontendRestauranteAngular](https://github.com/Ryan-OSudo/frontendRestauranteAngular)
+
+# Acesse a pasta
+cd frontendRestauranteAngular
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor
+ng serve
