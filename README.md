@@ -14,7 +14,7 @@ Para que a experiência seja completa, este frontend deve estar conectado à API
 
 | Camada | Tecnologia | Repositório |
 | :--- | :---: | :--- |
-| **Frontend (Atual)** | Angular 18 | [Acessar Repo](https://github.com/Ryan-OSudo/frontendRestauranteAngular) |
+| **Frontend (Atual)** | Angular 18 | [Acessar Repo](https://github.com/Ryan-OSudo/Restaurante-FrotnEnd) |
 | **Backend (API)** | Spring Boot | [Acessar Repo](https://github.com/RodrigoSMatos/Comanda-Digital-Completo) |
 
 ---
@@ -53,7 +53,7 @@ Certifique-se de ter instalado:
 
 ```bash
 # Clone o repositório
-git clone [https://github.com/Ryan-OSudo/frontendRestauranteAngular](https://github.com/Ryan-OSudo/frontendRestauranteAngular)
+git clone [https://github.com/Ryan-OSudo/Restaurante-FrotnEnd](https://github.com/Ryan-OSudo/Restaurante-FrotnEnd)
 
 # Acesse a pasta
 cd frontendRestauranteAngular
