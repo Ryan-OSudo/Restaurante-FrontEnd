@@ -4,38 +4,52 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-LTS-339933?style=for-the-badge&logo=node.js&logoColor=white)
 
-Esta é a interface web do **Sistema de Delivery UNASP**, desenvolvida em **Angular 18**. O projeto foca em uma experiência de usuário (**UX**) fluida e responsiva para o gerenciamento de pedidos.
+Esta é a interface web do **Sistema de Delivery UNASP**, desenvolvida em **Angular 18**. O projeto foca em uma experiência de usuário (**UX**) fluida e responsiva para o gerenciamento de pedidos em tempo real.
+
+---
+
+## 👥 Créditos e Colaboração
+
+Este projeto foi desenvolvido em conjunto por uma equipe dedicada para a disciplina de *Desenvolvimento Fullstack*.
+
+### **Integrantes do Grupo:**
+* 👨‍💻 **Ryan Gonçalves** (Responsável pelo Repositório Frontend)
+* 👨‍💻 **Rodrigo Matos**
+* 👨‍💻 **Gabriel Pedro**
+* 👨‍💻 **Jackson Borges**
+* 👨‍💻 **Edilson Mafra**
+* 👨‍💻 **Julio Aparecido**
 
 ---
 
 ## 🔗 Ecossistema do Projeto
 
-Para que a experiência seja completa, este frontend deve estar conectado à API de backend.
+Para que a experiência seja completa, este frontend deve estar conectado à API de backend correspondente.
 
 | Camada | Tecnologia | Repositório |
 | :--- | :---: | :--- |
-| **Frontend (Atual)** | Angular 18 | [Acessar Repo](https://github.com/Ryan-OSudo/Restaurante-FrotnEnd) |
-| **Backend (API)** | Spring Boot | [Acessar Repo](https://github.com/RodrigoSMatos/Comanda-Digital-Completo) |
+| **Frontend (Este)** | Angular 18 | [🚀 Repositório Atual](https://github.com/Ryan-OSudo/Restaurante-FrotnEnd) |
+| **Backend (API)** | Spring Boot | [⚙️ Backend Original](https://github.com/RodrigoSMatos/Comanda-Digital-Completo) |
 
 ---
 
 ## 🎯 Funcionalidades da Interface
 
-O sistema é dividido em visões estratégicas:
+O sistema é dividido em visões estratégicas para diferentes fluxos do restaurante:
 
-* **🛒 Menu & Carrinho:** Navegação, seleção de itens e cálculo de totais.
-* **👨‍🍳 Painel da Cozinha:** Visualização de pedidos em tempo real para produção.
-* **🚚 Gestão de Delivery:** Acompanhamento de entregas.
-* **📜 Histórico:** Consulta de todos os pedidos concluídos.
+* **🛒 Menu & Carrinho:** Interface intuitiva para seleção de pratos e fechamento de pedidos.
+* **👨‍🍳 Painel da Cozinha:** Gestão de comandas com atualizações em tempo real para a produção.
+* **🚚 Gestão de Delivery:** Monitoramento logístico desde o despacho até a entrega.
+* **📜 Histórico:** Dashboard para consulta de pedidos finalizados e métricas básicas.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **Angular 18:** Arquitetura baseada em componentes e *Signals*.
-* **TypeScript:** Desenvolvimento com tipagem estática e segura.
-* **RxJS:** Tratamento de fluxos de dados e requisições HTTP.
-* **Angular CLI:** Ferramenta de build e automação de desenvolvimento.
+* **Angular 18:** Utilização de *Signals* e arquitetura modular de componentes.
+* **TypeScript:** Garantia de tipagem estática e segurança no desenvolvimento.
+* **RxJS:** Gerenciamento eficiente de fluxos assíncronos e chamadas à API.
+* **SASS:** Estilização avançada para componentes responsivos.
 
 ---
 
@@ -43,23 +57,23 @@ O sistema é dividido em visões estratégicas:
 
 ### 1. Pré-requisitos
 Certifique-se de ter instalado:
-* **Node.js** (LTS)
+* **Node.js** (LTS recomendado)
 * **Angular CLI** (`npm install -g @angular/cli`)
 
-### 2. Instalação
+### 2. Instalação e Execução
 
 > [!WARNING]
-> **Atenção:** Certifique-se de que a API Backend esteja rodando em `http://localhost:8080` antes de iniciar.
+> **Atenção:** Certifique-se de que a API Backend esteja rodando em `http://localhost:8080` para que os dados sejam carregados corretamente.
 
 ```bash
-# Clone o repositório
-git clone [https://github.com/Ryan-OSudo/Restaurante-FrotnEnd](https://github.com/Ryan-OSudo/Restaurante-FrotnEnd)
+# 1. Clone o repositório
+git clone [https://github.com/Ryan-OSudo/Restaurante-FrotnEnd.git](https://github.com/Ryan-OSudo/Restaurante-FrotnEnd.git)
 
-# Acesse a pasta
-cd frontendRestauranteAngular
+# 2. Acesse a pasta do projeto
+cd Restaurante-FrotnEnd
 
-# Instale as dependências
+# 3. Instale as dependências do npm
 npm install
 
-# Inicie o servidor
+# 4. Inicie o servidor de desenvolvimento
 ng serve
